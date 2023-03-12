@@ -2,10 +2,10 @@ import React from "react";
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="relative m-6 h-[450px] w-80 overflow-hidden rounded-xl border-none shadow-lg shadow-orange-700">
+    <div className="relative m-6 h-full w-80 overflow-hidden rounded-xl border-none shadow-lg shadow-orange-700">
       <div className="">
         <img
-          className="h-full w-full object-cover"
+          className="h-[450px] w-full object-cover"
           src={
             movie.Poster !== "N/A"
               ? movie.Poster

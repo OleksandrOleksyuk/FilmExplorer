@@ -23,11 +23,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center p-10">
+    <div className="flex flex-col items-center justify-center p-5">
       <h1 className="mb-5 text-5xl font-bold text-orange-700">FilmExplorer</h1>
-      <div className="my-3 flex w-full items-center justify-center rounded-full p-1 shadow-lg shadow-orange-700 md:w-8/12 md:p-6">
+      <div className="my-3 flex w-full items-center justify-center rounded-full p-1 shadow-lg shadow-orange-700 md:w-8/12 md:p-2">
         <input
-          className="active:bg-red/500 flex-1 border-none pl-4 text-2xl font-medium text-orange-900"
+          className="flex-1 border-none pl-4 text-lg font-medium text-orange-900 md:text-2xl"
           placeholder="Search for movies"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
